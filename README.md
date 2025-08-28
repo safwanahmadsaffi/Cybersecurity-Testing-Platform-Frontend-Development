@@ -1,73 +1,157 @@
-# Welcome to your Lovable project
+# Cybersecurity Testing Platform — Frontend
 
-## Project info
+This repository contains the frontend application for the Cybersecurity Testing Platform. It's built with Vite, React, and TypeScript and uses Tailwind CSS and shadcn-ui components.
 
-**URL**: https://lovable.dev/projects/db2f511c-8e11-4f46-86a2-b4428488b434
+## Quick overview
 
-## How can I edit this code?
+- Tech: Vite, React, TypeScript, Tailwind CSS, shadcn-ui
+- Purpose: Frontend for a platform to manage and run cybersecurity tests and dashboards
 
-There are several ways of editing your application.
+## Requirements
 
-**Use Lovable**
+- Node.js (16+ recommended)
+- npm, pnpm or bun (this repo contains a `package.json`; a `bun.lockb` is present if you prefer bun)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/db2f511c-8e11-4f46-86a2-b4428488b434) and start prompting.
+## Local setup
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
 
-**Use your preferred IDE**
+    git clone https://github.com/safwanahmadsaffi/Cybersecurity-Testing-Platform-Frontend-Development.git
+    cd Cybersecurity-Testing-Platform-Frontend-Development
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Install dependencies (choose one):
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+    npm install
+    # or
+    pnpm install
+    # or
+    bun install
 
-Follow these steps:
+3. Start the dev server:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+    npm run dev
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Open http://localhost:5173 (or the URL printed by Vite) to view the app.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Scripts (common)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- npm run dev — start development server
+- npm run build — produce a production build
+- npm run preview — locally preview production build
+- npm run lint — run linters (if configured)
 
-**Edit a file directly in GitHub**
+See `package.json` for concrete script names and available tasks.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project structure (important files)
 
-**Use GitHub Codespaces**
+- `src/` — application source
+  - `main.tsx`, `App.tsx` — app entry
+  - `components/` — UI components, layout, pages
+- `index.html` — Vite entry HTML
+- `package.json`, `vite.config.ts`, `tsconfig.json` — build config
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Contributing
 
-## What technologies are used for this project?
+- Work on a topic branch: `git checkout -b feat/your-feature`
+- Make small, focused commits and include meaningful messages
+- Open a PR against `main`; describe changes and testing steps
 
-This project is built with:
+If you'd like CI, tests, or a contribution guide added, open an issue or PR.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Deployment
 
-## How can I deploy this project?
+This project builds into static assets. You can deploy the `dist/` folder to any static host (Vercel, Netlify, GitHub Pages) or serve with a simple static server.
 
-Simply open [Lovable](https://lovable.dev/projects/db2f511c-8e11-4f46-86a2-b4428488b434) and click on Share -> Publish.
+Example (Vercel): connect the repository and configure the build command `npm run build` and publish directory `dist`.
 
-## Can I connect a custom domain to my Lovable project?
+## Notes
 
-Yes, you can!
+- This README was updated to remove template-specific references and focus on the project.
+- If you use `bun` as your package manager, prefer `bun install` and `bun run <script>`.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+See the repository license file (if present). If there's no license, treat this code as "all rights reserved" until a license is added.
+
+---
+
+If you'd like, I can add a short contributing guide, CI workflow, or a concise list of development tasks next.
+# Cybersecurity Testing Platform — Frontend
+
+This repository contains the frontend for the Cybersecurity Testing Platform. It's a Vite + React + TypeScript application styled with Tailwind CSS and using shadcn-ui components.
+
+## Quick overview
+
+- Tech: Vite, React, TypeScript, Tailwind CSS, shadcn-ui
+- Purpose: Frontend for a platform that helps manage and run cybersecurity tests and dashboards
+
+## Requirements
+
+- Node.js (16+ recommended)
+- npm, pnpm or bun (this repo contains a `package.json`; a `bun.lockb` is present if you prefer bun)
+
+## Local setup
+
+1. Clone the repository:
+
+    git clone https://github.com/safwanahmadsaffi/Cybersecurity-Testing-Platform-Frontend-Development.git
+    cd Cybersecurity-Testing-Platform-Frontend-Development
+
+2. Install dependencies (choose one):
+
+    npm install
+    # or
+    pnpm install
+    # or
+    bun install
+
+3. Start the dev server:
+
+    npm run dev
+
+Open http://localhost:5173 (or the URL printed by Vite) to view the app.
+
+## Scripts (common)
+
+- npm run dev — start development server
+- npm run build — produce a production build
+- npm run preview — locally preview production build
+- npm run lint — run linters (if configured)
+
+See `package.json` for concrete script names and available tasks.
+
+## Project structure (important files)
+
+- `src/` — application source
+  - `main.tsx`, `App.tsx` — app entry
+  - `components/` — UI components, layout, pages
+- `index.html` — Vite entry HTML
+- `package.json`, `vite.config.ts`, `tsconfig.json` — build config
+
+## Contributing
+
+- Work on a topic branch: `git checkout -b feat/your-feature`
+- Make small, focused commits and include meaningful messages
+- Open a PR against `main`; describe changes and testing steps
+
+If you'd like CI, tests, or a contribution guide added, open an issue or PR.
+
+## Deployment
+
+This project builds into static assets. You can deploy the `dist/` folder to any static host (Vercel, Netlify, GitHub Pages) or serve with a simple static server.
+
+Example (Vercel): connect the repository and configure the build command `npm run build` and publish directory `dist`.
+
+## Notes
+
+- This repo was created/connected from a Lovable project template — edits pushed here will be reflected in the Lovable workspace if configured.
+- If you use `bun` as your package manager, prefer `bun install` and `bun run <script>`.
+
+## License
+
+See the repository license file (if present). If there's no license, treat this code as "all rights reserved" until a license is added.
+
+---
+
+If you'd like, I can add a short contributing guide, CI workflow, or a concise list of development tasks next.
+
